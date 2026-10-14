@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Roteiros | Cantos Nossos</title>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    Cantos Nossos
+                </a>
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <div class="navbar-nav ms-auto">
+
+                        <a class="nav-link" href="index.html">
+                            Início
+                        </a>
+
+                        <a class="nav-link active" href="roteiros.html">
+                            Roteiros
+                        </a>
+
+                        <a class="nav-link" href="contato.html">
+                            Fale conosco
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- APRESENTAÇÃO -->
+    <section class="container text-center my-5">
+        <h1>Descubra nossos roteiros</h1>
+
+        <p class="lead">
+            Explore destinos incríveis, conheça novas culturas
+            e encontre o roteiro perfeito para sua próxima viagem.
+        </p>
+    </section>
+
+    <!-- ROTEIROS -->
+    <main class="container my-5">
+
+        <div class="row g-4">
+
+            <!-- ROTEIRO 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+
+                    <img src="./Assets/img/band-italia.jpg"
+                         class="card-img-top"
+                         alt="Coliseu de Roma"
+                         style="height: 250px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <h5 class="card-title">
+                            Itália Clássica
+                        </h5>
+
+                        <p class="card-text">
+                            Descubra a história de Roma, visite monumentos
+                            famosos e conheça a cultura italiana.
+                        </p>
+
+                        <p><strong>Destino:</strong> Roma, Itália</p>
+                        <p><strong>Duração:</strong> 5 dias</p>
+
+                        <button class="btn btn-primary mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#roteiroRoma">
+                            Ver roteiro
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROTEIRO 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+
+                    <img src="./Assets/img/band-franca.jpg"
+                         class="card-img-top"
+                         alt="Pontos turísticos de Paris"
+                         style="height: 250px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <h5 class="card-title">
+                            Encantos de Paris
+                        </h5>
+
+                        <p class="card-text">
+                            Conheça monumentos históricos, museus,
+                            cafés e a arquitetura da capital francesa.
+                        </p>
+
+                        <p><strong>Destino:</strong> Paris, França</p>
+                        <p><strong>Duração:</strong> 4 dias</p>
+
+                        <button class="btn btn-primary mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#roteiroParis">
+                            Ver roteiro
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROTEIRO 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+
+                    <img src="./Assets/img/band-portugal.jpg"
+                         class="card-img-top"
+                         alt="Cidade de Lisboa"
+                         style="height: 250px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <h5 class="card-title">
+                            Portugal Inesquecível
+                        </h5>
+
+                        <p class="card-text">
+                            Explore ruas históricas, miradouros,
+                            construções antigas e a gastronomia portuguesa.
+                        </p>
+
+                        <p><strong>Destino:</strong> Lisboa, Portugal</p>
+                        <p><strong>Duração:</strong> 3 dias</p>
+
+                        <button class="btn btn-primary mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#roteiroLisboa">
+                            Ver roteiro
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- MODAL ROMA -->
+    <div class="modal fade" id="roteiroRoma" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Itália Clássica — 5 dias</h5>
+
+                    <button type="button" class="btn-close"
+                            data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p><strong>Dia 1:</strong> Chegada e passeio pelo centro histórico.</p>
+                    <p><strong>Dia 2:</strong> Visita ao Coliseu e ao Fórum Romano.</p>
+                    <p><strong>Dia 3:</strong> Conheça o Vaticano e a Basílica de São Pedro.</p>
+                    <p><strong>Dia 4:</strong> Passeio pela Fontana di Trevi e pela Piazza Navona.</p>
+                    <p><strong>Dia 5:</strong> Compras, gastronomia e despedida de Roma.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL PARIS -->
+    <div class="modal fade" id="roteiroParis" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Encantos de Paris — 4 dias</h5>
+
+                    <button type="button" class="btn-close"
+                            data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p><strong>Dia 1:</strong> Conheça a Torre Eiffel e o Campo de Marte.</p>
+                    <p><strong>Dia 2:</strong> Explore o Museu do Louvre e seus arredores.</p>
+                    <p><strong>Dia 3:</strong> Passeie pela Catedral de Notre-Dame e pelo Quartier Latin.</p>
+                    <p><strong>Dia 4:</strong> Visite Montmartre e aproveite os cafés franceses.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL LISBOA -->
+    <div class="modal fade" id="roteiroLisboa" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Portugal Inesquecível — 3 dias</h5>
+
+                    <button type="button" class="btn-close"
+                            data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p><strong>Dia 1:</strong> Explore a Praça do Comércio e o bairro da Baixa.</p>
+                    <p><strong>Dia 2:</strong> Visite Belém, o Mosteiro dos Jerónimos e a Torre de Belém.</p>
+                    <p><strong>Dia 3:</strong> Conheça Alfama, seus miradouros e a culinária portuguesa.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CHAMADA FINAL -->
+    <section class="container text-center my-5 py-4">
+        <h2>Sua próxima aventura começa aqui!</h2>
+
+        <p>
+            Escolha seu destino e comece a planejar uma viagem inesquecível.
+        </p>
+
+        <a href="contato.html" class="btn btn-primary btn-lg">
+            Fale conosco
+        </a>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2026 Cantos Nossos. Todos os direitos reservados.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
