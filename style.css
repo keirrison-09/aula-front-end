@@ -1,20 +1,181 @@
-footer{
-    text-align: center;
+
+   :root {
+    --azul-escuro: #1D3557;
+    --azul-medio: #457B9D;
+    --azul-claro: #A8DADC;
+    --branco: #FFFFFF;
+    --cinza-claro: #F1F3F5;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cinza-claro);
+    color: var(--azul-escuro);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.navbar {
+    background-color: var(--azul-escuro) !important;
+    box-shadow: 0 4px 6px rgba(29, 53, 87, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--branco) !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--azul-claro) !important;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--branco) !important;
+    text-shadow: 0 0 8px rgba(168, 218, 220, 0.5);
+}
+
+
 .carousel-item img {
-height: 500px;
-object-fit: cover;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(0.9);
+}
+
+.carousel-caption {
+    background: rgba(29, 53, 87, 0.75);
+    padding: 25px;
+    border-radius: 12px;
+    bottom: 15%;
+    backdrop-filter: blur(4px);
+}
+
+.carousel-caption h2 {
+    font-weight: 700;
+    color: var(--branco);
+}
+
+.carousel-caption p {
+    color: var(--azul-claro);
 }
 
 
 .card {
-height: 100%;
-transition: 0.3s;
-
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--branco);
+    box-shadow: 0 4px 12px rgba(29, 53, 87, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(29, 53, 87, 0.18);
 }
 
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: var(--azul-escuro);
+    font-weight: 700;
+}
+
+
+.btn-primary {
+    background-color: var(--azul-medio);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: var(--branco);
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--azul-escuro);
+}
+
+
+.btn-outline-dark {
+    color: var(--azul-escuro);
+    border-color: var(--azul-medio);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--azul-medio);
+    color: var(--branco);
+    border-color: var(--azul-medio);
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid var(--azul-claro);
+    background-color: var(--branco);
+    color: var(--azul-escuro);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--azul-medio);
+    box-shadow: 0 0 0 0.25rem rgba(69, 123, 157, 0.25);
+}
+
+
+footer {
+    text-align: center;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 20px 0;
+    margin-top: auto;
+    font-size: 0.95rem;
+}
+
+
+
+
+@media (max-width: 992px) {
+    .carousel-item img {
+        height: 380px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 260px;
+    }
+
+    .carousel-caption {
+        padding: 12px;
+        bottom: 8px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+        margin-bottom: 6px;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+    }
+
+
+    .col-md-4, .col-lg-4, .col-lg-7, .col-lg-5 {
+        margin-bottom: 1.5rem;
+    }
+}
